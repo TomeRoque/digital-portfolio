@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'portfolio/css/about.css' %}">
+
+    <link rel="icon" type="image/x-icon" href="https://yt3.ggpht.com/ytc/AKedOLTtSIICccWIydxNZ3Cj3QQFukp2OukrFVzoXIdI=s600-c-k-c0x00ffffff-no-rj-rp-mo"/>
+
+</head>
+
+<body>
+  <header>
+    <p>Tomé Roque</p>
+    <nav>
+      <a href="{% url 'portfolio:hero' %}">Home</a>
+      <a href="{% url 'portfolio:about' %}">About Me</a>
+      <a href="{% url 'portfolio:blog' %}">Blog</a>
+      <a href="{% url 'portfolio:quizz' %}">Quizz</a>
+        <a href="{% url 'portfolio:web' %}">Web</a>
+        <a href="{% url 'portfolio:contactos' %}">Contactos</a>
+    </nav>
+  </header>
+
+  <div id="grad1"><div id="gradup"></div></div>
+
+        <h1>{% if hora > 12 %}
+                   Good afternoon,
+                {% else %}
+                   Good morning,
+                {% endif %}
+                greetings to {{ local }}, where it is {{ hora }}.<br></h1>
+
+
+        <h1>This is the page where I talk a little more about myself!</h1>
+        <p> <br> As I have established before I am both a programmer and an editor, <br> saying that I have been working on some different projects throught
+        my life and this is where I am going to show you some of them aswell as some of my personal experiences<br> </p>
+
+    <div class="exp">
+        <div class="uni">University projects</div>
+        <div class="noraya">Video editing at Noraya agency</div>
+        <div class="fute">Former football player, in the local team</div>
+        <div class="care">Monitoring at various summer camps, aswell as multiple people related jobs</div>
+        <div class="skills">Personal Skills</div>
+    </div>
+
+
+
+    <h1> Degree in Computer Science at Universidade Lusófona de Humaninades e Tecnologias</h1>
+
+     <h2><b><a class="universidade" href="https://www.ulusofona.pt" target="_self">Universidade Lusófona de Humanidades e Tecnologias</a></b></h2>
+
+<h2>Cadeiras de Primeiro ano</h2>
+
+<div class="cadeiras1o">
+<div>
+    <div><img src="{% static 'portfolio/images/fisics.jpg' %}" alt="fisics"></div>
+    <div><p>Fundamentals of Physics</p></div>
+</div>
+<div>
+    <div><img src="" alt=""></div>
+    <div><p>Digital Systems</p></div>
+</div>
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Discrete Mathematics</p></div>
+    </div>
+    <div>
+<div><img src="{% static 'portfolio/images/math.jpg' %}" alt="math"></div>
+    <div><p>Mathematics I</p></div>
+    </div>
+
+    <div>
+<div><img src="{% static 'portfolio/images/prog.jpg' %}" alt="prog"></div>
+    <div><p>Programming Fundamentals</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Algorithms and Data Structures</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Behavioral Competencies</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Computer Architecture</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Linear Algebra</p></div>
+    </div>
+
+    <div>
+<div><img src="{% static 'portfolio/images/math.jpg' %}" alt="math"></div>
+    <div><p>Mathematics II</p></div>
+    </div>
+
+    <div>
+<div><img src="{% static 'portfolio/images/prog.jpg' %}" alt="prog"></div>
+    <div><p>Programming Languages I</p></div>
+    </div>
+
+</div>
+
+
+<h2>Cadeiras de Segundo ano</h2>
+
+<div class="cadeiras2o">
+<div>
+    <div><img src="" alt=""></div>
+    <div><p>Advanced Computer Architectures</p></div>
+</div>
+<div>
+    <div><img src="" alt=""></div>
+    <div><p>Databases</p></div>
+</div>
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Operating Systems</p></div>
+    </div>
+    <div>
+<div><img src="{% static 'portfolio/images/prog.jpg' %}" alt="prog"></div>
+    <div><p>Programming Languages II</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Signals and Systems</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Computer Networks</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Decision Support Systems</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Computer Networks</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Decision Support Systems</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Graphic Computing</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Requirements and Test Engeneering</p></div>
+    </div>
+
+    <div>
+<div><img src="{% static 'portfolio/images/prog.jpg' %}" alt="prog"></div>
+    <div><p>Web Programming</p></div>
+    </div>
+</div>
+
+
+
+<h2>Cadeiras de Terceiro ano</h2>
+
+<div class="cadeiras3o">
+<div>
+    <div><img src="" alt=""></div>
+    <div><p>Final Course Work</p></div>
+</div>
+<div>
+    <div><img src="" alt=""></div>
+    <div><p>Data Science</p></div>
+</div>
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Distributed Computing</p></div>
+    </div>
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Human-Machine Interaction</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Software Engeneering</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Artificial Intelligence</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Cloud Information Systems</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Computer Security</p></div>
+    </div>
+
+    <div>
+<div><img src="" alt=""></div>
+    <div><p>Mobile Computing</p></div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

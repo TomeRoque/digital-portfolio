@@ -1,0 +1,86 @@
+/* static/pages/css/base.css */
+
+header p {
+   font-style: italic;
+   color: gray;
+}
+
+
+
+
+
+.info {
+   font-size: 0.7em;
+   color: lightgray;
+}
+
+
+main {
+   width: 800px;
+   margin: auto;
+   padding: 10px;
+   background-color: white;
+   border-radius: 6px;
+}
+
+
+main p {
+   text-align: left;
+   padding: 20px;
+   margin: 10px;
+   color: white;
+   background-color: mediumpurple;
+   border-radius: 3px;
+}
+
+main p:last-child {
+   background-color: darkkhaki;
+}
+
+footer {
+
+
+  background: #B300B2;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  color : white;
+  
+
+}
+
+.menu {
+
+  height: 10vh;
+  background: #B300B2;
+  color: white;
+
+  top: 0;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nomeMenu {
+  display:block;
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white
+}
+
+.hrefMenu {
+  display:flex;
+  justify-contents: flex-end;
+}
+
+
+nav a {
+  display:block;
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: white
+}

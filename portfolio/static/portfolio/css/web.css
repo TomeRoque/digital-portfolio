@@ -1,0 +1,51 @@
+* {
+  padding: 10;
+  margin: 10;
+  font-family: sans-serif;
+}
+
+
+#grad1 {
+  height: 400px;
+  background-image: url("https://cutewallpaper.org/26/best-gifs-for-desktop-wallpaper/animated-gif39s-for-use-in-wallpapers.gif");
+  background-position: center;
+
+}
+
+
+#gradup {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(transparent 10%, black 80%);
+
+}
+
+#diagrama {
+   width:800px;
+   background-color: white;
+   border: 1px solid black;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main{
+  padding: 10;
+
+  background-color: black;
+  color: white;
+  line-height: 2;
+
+}
+
+div {
+  padding: 10;
+  margin: 10;
+}
+
+body {
+background-color: black;
+
+}
+

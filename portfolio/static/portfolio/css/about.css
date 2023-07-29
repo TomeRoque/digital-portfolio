@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: sans-serif;
+
+}
+
+header {
+  height: 10vh;
+  background: #B300B2;
+  color: white;
+  top: 0;
+
+  /* alinhando logo e menu */
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div {
+  font-size: 2em;
+  padding: 1em;
+  display:flex;
+  justify-content:spacebetween;
+}
+
+header nav {
+  display:flex;
+  justify-contents: flex-end;
+}
+
+
+nav a {
+  padding: 0 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  color: lightgray;
+}
+
+
+main {
+  height: 45vh;
+  background-color:black;
+  padding: 4em 4em;
+  background-image: url("https://cutewallpaper.org/26/best-gifs-for-desktop-wallpaper/animated-gif39s-for-use-in-wallpapers.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+
+}
+
+#grad1 {
+  height: 400px;
+  background-image: url("https://cutewallpaper.org/26/best-gifs-for-desktop-wallpaper/animated-gif39s-for-use-in-wallpapers.gif");
+  background-position: center;
+
+}
+
+
+#gradup {
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(transparent 10%, black 80%);
+
+}
+
+footer {
+  height:5vh;
+  display:flex;
+  justify-content: flex-end;
+  padding: 0 2vw;
+  align-items: center;
+}
+
+footer div {
+  display:flex;
+  text-align: center;
+}
+
+h1{
+  padding: 10;
+  margin: 10;
+}
+
+body{
+  padding: 10;
+  margin: 10;
+  background-color: black;
+  color: white;
+}
+
+
+
+.uni {
+  grid-area: menu;
+  background-image: url("../images/lusofona-logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+.noraya {
+  grid-area: header;
+  background-image: url("../images/noraya-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.care {
+  grid-area: main;
+  background-image: url("../images/people.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fute {
+  grid-area: right;
+  background-image: url("../images/team.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.skills {
+  grid-area: footer;
+  background-image: url("../images/skills.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.exp {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main right right right'
+    'menu menu footer footer footer footer';
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  -webkit-text-fill-color: #e9d8f2; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 15px;
+}
+
+.exp > div {
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+
+
+.cadeiras1o {
+display: flex;
+background-color: #e9d8f2;
+flex-flow: row wrap;
+justify-content: space-around;
+align-items:space-around;
+padding: 50px;
+}
+
+.cadeiras1o > div {
+display: flex;
+justify-content: space-around;
+border-radius: 20px;
+margin: 10px;
+}
+
+.cadeiras1o img{
+border-radius: 20px 0 0 20px;
+height: 100%;
+
+}
+
+.cadeiras1o div div:last-child{
+width: 150px;
+background-color: white;
+padding: 20px;
+border-radius: 0 20px 20px 0;
+color:black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.cadeiras2o {
+display: flex;
+background-color: #d2b2e5;
+flex-flow: row wrap;
+justify-content: space-around;
+align-items:space-around;
+padding: 50px;
+}
+
+.cadeiras2o > div {
+display: flex;
+justify-content: space-around;
+border-radius: 20px;
+margin: 10px;
+}
+
+.cadeiras2o img{
+border-radius: 20px 0 0 20px;
+height: 100%;
+}
+
+.cadeiras2o div div:last-child{
+width: 150px;
+background-color: white;
+padding: 20px;
+border-radius: 0 20px 20px 0;
+color:black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.cadeiras3o {
+display: flex;
+background-color: #ba8cd7;
+flex-flow: row wrap;
+justify-content: space-around;
+align-items:space-around;
+padding: 50px;
+}
+
+.cadeiras3o > div {
+display: flex;
+justify-content: space-around;
+border-radius: 20px;
+margin: 10px;
+}
+
+.cadeiras3o img{
+border-radius: 20px 0 0 20px;
+height: 100%;
+}
+
+.cadeiras3o div div:last-child{
+width: 150px;
+background-color: white;
+padding: 20px;
+border-radius: 0 20px 20px 0;
+color:black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
