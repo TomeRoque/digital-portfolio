@@ -86,6 +86,7 @@ h1{
 body{
   padding: 10;
   margin: 10;
+  text-align: center;
   background-color: black;
   color: white;
 }

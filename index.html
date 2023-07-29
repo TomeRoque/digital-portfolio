@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Bem vindo!</title>
 
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'portfolio/css/index.css' %}">
+  <link rel="stylesheet" href="assets/static/portfolio/css/index.css">
 
   <link rel="icon" type="image/x-icon" href="https://yt3.ggpht.com/ytc/AKedOLTtSIICccWIydxNZ3Cj3QQFukp2OukrFVzoXIdI=s600-c-k-c0x00ffffff-no-rj-rp-mo"/>
 
@@ -15,8 +14,8 @@
   <header>
     <p>Tomé Roque</p>
     <nav>
-      <a href="{% url 'portfolio:hero' %}">Home</a>
-      <a href="{% url 'portfolio:about' %}">About Me</a>
+      <a href="index.html">Home</a>
+      <a href="assets/templates/about.html">About Me</a>
       <a href="{% url 'portfolio:blog' %}">Blog</a>
       <a href="{% url 'portfolio:quizz' %}">Quizz</a>
       <a href="{% url 'portfolio:web' %}">Web</a>
@@ -31,7 +30,7 @@
 
   <article class="primeiro">
     <p><b><i>Meet Tomé Roque.</i></b> Programmer & Editor <br><br>
-    Hey there! As you already know, my name is Tomé Roque. A small town boy who grew up to take a degree in computer science
+    Hi there! As you already know, my name is Tomé Roque. A small town boy who grew up to take a degree in computing engeneering
       while also having a passion for photo and video editing, having been involved in projects on both matters. <br>
       Living in a world where people should enjoy what they do, I also make some of my own work mainly for fun purposes.
       Have a look around my website and discover them for yourselves!
@@ -42,7 +41,7 @@
   </article>
 
   <footer>
-    <p>Tomé Roque ♠ Website desenvolvido em 2022</p>
+    <p>Tomé Roque ♠ Website developed in 2022 & 2023</p>
 
   </footer>
 </body>

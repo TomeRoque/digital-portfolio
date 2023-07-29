@@ -15,7 +15,7 @@ body > * {
 
 
 header {
-
+  padding:10;
   height: 10vh;
   background: #B300B2;
   color: white;
