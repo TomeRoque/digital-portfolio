@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem vindo!</title>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'portfolio/css/quizz.css' %}">
+
+    <link rel="stylesheet" href="../static/portfolio/css/quizz.css">
+
+</head>
+
+<body>
+  <header>
+    <p>Tomé Roque</p>
+    <nav>
+      <a href="{% url 'portfolio:hero' %}">Home</a>
+      <a href="{% url 'portfolio:about' %}">About Me</a>
+      <a href="{% url 'portfolio:blog' %}">Blog</a>
+      <a href="{% url 'portfolio:quizz' %}">Quizz</a>
+        <a href="{% url 'portfolio:web' %}">Web</a>
+        <a href="{% url 'portfolio:contactos' %}">Contactos</a>
+    </nav>
+  </header>
+
+
+<section>
+        <h3>Quizz</h3>
+        <p>In this page you will be tested about you knollege on html</p>
+
+        <form method="POST">
+            <fieldset>
+                On HTML
+            <fieldset>
+                <title>info</title>
+                <input type="text" name="nome" placeholder="insira o seu nome">
+                <br>
+            </fieldset>
+            </fieldset>
+
+            <fieldset>
+                <title>Questions</title>
+                <label><b>Question 1:</b> HTML stands for...</label>
+                <br>
+                <input type="radio" id="pais1" name="pais" value="portugal"><label for="pais1"> High Tension Multimedia LANs</label><br>
+                <input type="radio" id="pais2" name="pais" value="espanha"><label for="pais2"> HyperText Markup Language</label><br>
+                <input type="radio" id="pais3" name="pais" value="brasil"><label for="pais3"> HardText Makeup Language</label>
+                <br>
+                <br>
+                <label><b>Question 2:</b> HTML is a language used mainly for <input type="text" id="emisferio" name="emisferio" placeholder="games / websites / data bases / cicles"><label for="emisferio"></label></label>
+                <br>
+                <br>
+                <label><b>Question 3:</b> Django has support for:</label><br>
+                <input type="checkbox" id="known1" name="known1" value="praia"><label for="known1">inherit</label><br>
+                <input type="checkbox" id="known2" name="known2" value="chuva"><label for="known2">Cicles</label><br>
+                <input type="checkbox" id="known3" name="known3" value="mare"><label for="known3">Load static files</label><br>
+                <input type="checkbox" id="known4" name="known4" value="turismo"><label for="known4">couple of drinks</label><br>
+                <input type="checkbox" id="known5" name="known5" value="calor"><label for="known5">I dont even know anymore</label><br>
+                <br>
+                <br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Escreva um Comentário"></textarea>
+                <br>
+                <br>
+
+                <input type="submit">
+            </fieldset>
+        </form>
+    </section>
+
+
+
+
+
+
+<footer>
+    <p>Tomé Roque ♠ Website desenvolvido em 2022</p>
+
+  </footer>
+
+</body>
+</html>

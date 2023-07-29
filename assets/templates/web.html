@@ -1,0 +1,62 @@
+{% extends 'portfolio/layout.html' %}
+
+{% load static %}
+
+{% block title %}Web{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'portfolio/css/web.css' %}">
+
+
+
+{% endblock %}
+
+
+{% block main %}
+
+<div id="grad1"><div id="gradup"></div></div>
+
+<h1>Sobre este Website<br></h1>
+
+<div id="diagrama">
+
+    <img src="{% static 'portfolio/images/diagrama.png' %}">
+
+</div>
+
+<h1> Estrutura do site </h1>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g1DsE_qHw9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+<p>Em ciência da computação, front-end, interface frontal ou parte frontal e back-end, parte secundária, parte de suporte ou parte de retaguarda são termos generalizados que se referem às etapas inicial e final de um processo. O front-end é responsável por coligir a entrada do usuário em várias formas e processá-la para adequá-la a uma especificação em que o back-end a possa utilizar.
+    <br></p>
+<h2>Algumas tecnologias para web front-end e back-end</h2>
+<h3>Front-end</h3>
+<p>React<br>
+XHTML<br>
+HTML5<br>
+CSS<br>
+Javascript<br>
+AJAX<br>
+jQuery<br>
+CFML<br>
+AngularJS<br>
+Angular<br>
+    Vue<br></p>
+<h2>Back-end</h2>
+<p>PHP<br>
+C<br>
+C++<br>
+Node.js<br>
+Ruby on Rails<br>
+Python<br>
+Java<br>
+JSP<br>
+.NET<br>
+C♯<br>
+VB<br>
+Perl Catalyst<br></p>
+<p style="colour: grey">Texto retirado do wikipedia</p>
+{% endblock %}

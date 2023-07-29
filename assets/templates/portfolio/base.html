@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentários</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/blog.css' %}">
+</head>
+<body>
+<header class="menu">
+    <p class="nomeMenu">Tomé Roque</p>
+    <nav class="hrefMenu">
+      <a href="{% url 'portfolio:hero' %}">Home</a>
+      <a href="{% url 'portfolio:about' %}">About Me</a>
+      <a href="{% url 'portfolio:blog' %}">Blog</a>
+      <a href="{% url 'portfolio:quizz' %}">Quizz</a>
+        <a href="{% url 'portfolio:web' %}">Web</a>
+        <a href="{% url 'portfolio:contactos' %}">Contactos</a>
+    </nav>
+  </header>
+
+    <header class="jumbotron text-center">
+        <h1>Comments</h1>
+        <hr width="30%">
+        <p>Leave a comment, tips are always welcome!</p>
+    </header>
+
+    <main class="container text-center">
+    {% block main %}
+
+    {% endblock %}
+    </main>
+    <footer>Portfólio Tomé Roque - ULHT</footer>
+</body>
+</html>
