@@ -25,36 +25,55 @@
 
       <div id="grad1"><div id="gradup"></div></div>
 
-      <h1 id="greeting"></h1>
-      <script>
-          function getGreeting() {
-            // Get the current date and time
-            const now = new Date();
 
-            // Get the current hour (0-23)
-            const currentHour = now.getHours();
 
-            let greeting;
-            if (currentHour >= 5 && currentHour < 12) {
-              greeting = "Good morning";
-            } else if (currentHour >= 12 && currentHour < 18) {
-              greeting = "Good afternoon,";
-            } else {
-              greeting = "Good evening,";
-            }
+<div class="aboutHeader">
+    <h1 id="greeting"></h1>
+    <script>
+        function getGreeting() {
+          // Get the current date and time
+          const now = new Date();
 
-            return greeting;
+          // Get the current hour (0-23)
+          const currentHour = now.getHours();
+
+          let greeting;
+          if (currentHour >= 5 && currentHour < 12) {
+            greeting = "Good morning";
+          } else if (currentHour >= 12 && currentHour < 18) {
+            greeting = "Good afternoon,";
+          } else {
+            greeting = "Good evening,";
           }
 
-      const greetingElement = document.getElementById("greeting");
-      greetingElement.textContent = getGreeting();
+          return greeting;
+        }
 
-      </script>
+    const greetingElement = document.getElementById("greeting");
+    greetingElement.textContent = getGreeting();
 
-
+    </script>
             <h1>This is the page where I talk a little more about myself!</h1>
             <p> <br> As I have established before I am both a programmer and an editor, <br> saying that I have been working on some different projects throught
-            my life<br> and this is where I am going to show you some of them aswell as some of my personal experiences<br> </p>
+            my life<br> and this is where I am going to show you some of them aswell as some of my personal experiences<br>
+                </p>
+
+</div>
+
+      <div class="container">
+          <!-- The image div -->
+          <div class="image">
+              <img src="path-to-your-image.jpg" alt="Image">
+          </div>
+          <!-- The text div -->
+          <div class="text">
+              <p>
+                  This is the text content that will appear on the right side of the image. You can add more text here and style it as you like.
+              </p>
+          </div>
+      </div>
+
+      <h1>Some of the highlights of my professional career can be sumed up to:</h1>
 
         <div class="exp">
             <div class="uni">University projects</div>

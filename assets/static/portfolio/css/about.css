@@ -91,6 +91,54 @@ body{
   color: white;
 }
 
+.aboutHeader{
+    font-size: 28px;
+    margin: 30px;
+    font-weight: bold;
+          color: #fff;
+          background-image: linear-gradient(120deg, #74b9ff, #55efc4);
+          background-clip: text;
+          -webkit-background-clip: text;
+          display: inline-block;
+          padding: 8px 16px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          transform: translateY(0);
+          transition: transform 0.3s ease;
+          margin-top: 20px;
+          line-height: 1.5;
+
+
+}
+
+.container {
+      display: flex;
+      align-items: center;
+    }
+
+    .image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .text {
+      flex: 1;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .text p {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
 
 
 .uni {

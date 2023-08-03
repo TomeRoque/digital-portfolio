@@ -4,6 +4,12 @@
   font-family: sans-serif;
 }
 
+header > p {
+    margin-left:20px;
+    font-size: 3vw;
+
+}
+
 
 body > * {
 
@@ -13,15 +19,40 @@ body > * {
   font-size: 3em;
 }
 
+body {
+      font-family: Arial, sans-serif;
+    }
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.profile-photo {
+   width: 240px;
+   height: 240px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-bottom: 25px;
+}
+
+.profile-photo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
 
 header {
   padding:10;
   height: 10vh;
-  background: #B300B2;
+  background: #741b80;
   color: white;
   position: sticky;
   top: 0;
-
   display:flex;
   justify-content: space-between;
 }
@@ -29,6 +60,7 @@ header {
 nav {
   display:flex;
   justify-contents: flex-end;
+  margin-right:20px;
 }
 
 
@@ -52,7 +84,7 @@ main {
 
 
 main > p {
-  font-size: 4rem;
+  font-size: 6vw;
   color: black;
   -webkit-text-fill-color: #e9d8f2; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
@@ -60,8 +92,7 @@ main > p {
 }
 
 article.primeiro {
-
-  height: 90vh;
+  min-height: 90vh;
   background: #e9d8f2;
   padding: 0 4vw;
   text-align: center;
@@ -83,7 +114,11 @@ article.segundo {
 footer {
 
   height: 10vh;
-  background: #B300B2;
+  background: #741b80;
   color: white;
 
+}
+
+footer > p{
+    font-size: 2vw;
 }
