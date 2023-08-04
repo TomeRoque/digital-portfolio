@@ -7,6 +7,10 @@
 header > p {
     margin-left:20px;
     font-size: 3vw;
+    color: black;
+      -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 0.02vw;
+      -webkit-text-stroke-color: black;
 
 }
 
@@ -46,25 +50,42 @@ body {
 }
 
 
-header {
+/*header {
   padding:10;
   height: 10vh;
-  background: #741b80;
+  background: #4a1a6a;
   color: white;
   position: sticky;
   top: 0;
   display:flex;
   justify-content: space-between;
-}
+}*/
+
+header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 20px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0); /* Initial transparent background */
+      transition: background-color 0.5s; /* Smooth transition effect */
+    }
+    header.scrolled {
+      background: #4a1a6a; /* Background color with transparency */
+    }
+
 
 nav {
   display:flex;
   justify-contents: flex-end;
+  margin-left:10px;
   margin-right:20px;
 }
 
 
 nav a {
+
   display:block;
   padding: 0 1em;
   text-decoration: none;
@@ -72,37 +93,48 @@ nav a {
   color: white
 }
 
+nav > a{
+font-size: 1.5vw;
+color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.02vw;
+  -webkit-text-stroke-color: black;
+
+}
+
 
 main {
-  height: 90vh;
+  height: 100vh;
   background-image: url("../images/herobgd.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 
 main > p {
+  margin-top: 22vw;
   font-size: 6vw;
   color: black;
   -webkit-text-fill-color: #e9d8f2; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.08vw;
   -webkit-text-stroke-color: black;
 }
+
+
 
 article.primeiro {
   min-height: 90vh;
   background: #e9d8f2;
   padding: 0 4vw;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5vw;
 }
 
 
 article.segundo {
   /* como tem menu e rodapé visíveis (10vh cada), define-se como altura 80vh. */
-  height: 80vh;
+  min-height: 80vh;
   background-image: url("https://cutewallpaper.org/26/best-gifs-for-desktop-wallpaper/animated-gif39s-for-use-in-wallpapers.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -114,7 +146,7 @@ article.segundo {
 footer {
 
   height: 10vh;
-  background: #741b80;
+  background: #4a1a6a;
   color: white;
 
 }
