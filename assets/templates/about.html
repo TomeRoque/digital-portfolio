@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="../../assets/static/portfolio/css/about.css">
 
+
     <link rel="icon" type="image/x-icon"
           href="https://yt3.ggpht.com/ytc/AKedOLTtSIICccWIydxNZ3Cj3QQFukp2OukrFVzoXIdI=s600-c-k-c0x00ffffff-no-rj-rp-mo"/>
 
@@ -15,12 +16,10 @@
 <header id="main-header">
     <p>Tomé Roque</p>
     <nav>
-        <a href="{% url 'portfolio:hero' %}">Home</a>
-        <a href="{% url 'portfolio:about' %}">About Me</a>
-        <a href="{% url 'portfolio:blog' %}">Blog</a>
-        <a href="{% url 'portfolio:quizz' %}">Quizz</a>
-        <a href="{% url 'portfolio:web' %}">Web</a>
-        <a href="{% url 'portfolio:contactos' %}">Contactos</a>
+        <a href="../../index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="{% url 'portfolio:blog' %}">Projects</a>
+        <a href="{% url 'portfolio:quizz' %}">Contact</a>
     </nav>
 </header>
 
@@ -43,64 +42,52 @@
             giving my all on the activity I'm working on.
 
         </p>
+        <p>If you are interested on my work, don't hesitate to contact me:</p>
+
+        <div class="profile-container">
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/tom%C3%A9-roque-774752182/" target="_blank">
+                    <img src="../../assets/static/portfolio/images/linkedin.png" alt="LinkedIn Icon" class="icon-image" id="firstImage">
+                    <span class="name">Tomé Roque</span>
+                </a>
+            </div>
+            <div class="contact">
+                <a href="mailto:tome.roque09@gmail.com">
+                    <img src="../../assets/static/portfolio/images/gmail.png" alt="Email Icon" class="icon-image">
+                    <span class="email">tome.roque09@gmail.com</span>
+                </a>
+            </div>
+        </div>
+
     </div>
 
 
 </div>
 <div class="container" id="personalAbilities">
     <div class="object-container" onclick="showInfo('object1')">
-        <img src="../../assets/static/portfolio/images/aboutIcons/carreira-notSelected.png" alt="Object 1">
+        <img id="career" src="../../assets/static/portfolio/images/aboutIcons/carreira-notSelected.png" alt="Object 1">
         <p>Career</p>
     </div>
 
     <div class="object-container" onclick="showInfo('object2')">
-        <img src="../../assets/static/portfolio/images/aboutIcons/uni-notSelected.png" alt="Object 2">
+        <img id="cumputing" src="../../assets/static/portfolio/images/aboutIcons/uni-notSelected.png" alt="Object 2">
         <p>Computing Engeneering</p>
     </div>
 
     <div class="object-container" onclick="showInfo('object3')">
-        <img src="../../assets/static/portfolio/images/aboutIcons/editor-notSelected.png" alt="Object 3">
+        <img id="editor" src="../../assets/static/portfolio/images/aboutIcons/editor-notSelected.png" alt="Object 3">
         <p>Editor</p>
     </div>
     <div class="object-container" onclick="showInfo('object4')">
-        <img src="../../assets/static/portfolio/images/aboutIcons/skills-notSelected.png" alt="Object 4">
+        <img id="skills" src="../../assets/static/portfolio/images/aboutIcons/skills-notSelected.png" alt="Object 4">
         <p>Personal Skills</p>
     </div>
 
 
 </div>
     <div class="info-container" id="info">
-        <p>Click on an object to view more information.</p>
+        <iframe src="" frameborder="0" width="100%" height="600" id="frame"></iframe>
     </div>
-
-<!--
-<div class="container">
-    <div class="columnImage">
-        <img src="../../assets/static/portfolio/images/about.png" alt="Image">
-    </div>
-
-    <div class="columnTitle">
-        <h2>About me</h2>
-    </div>
-    <div class="column">
-        <section>
-            <h3>Introduction</h3>
-            <p>On this page, I will be explaining who I am, the degree I took, and where I took it.</p>
-        </section>
-
-        <section>
-            <h3>Career and Projects</h3>
-            <p>Here, I will share information about my career so far and all the projects I've been involved in.</p>
-        </section>
-
-        <section>
-            <h3>Contact</h3>
-            <p>This section will provide details on how to reach me.</p>
-        </section>
-    </div>
-</div>
--->
-
 
 </body>
 

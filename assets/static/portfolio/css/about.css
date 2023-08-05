@@ -103,6 +103,10 @@ body {
 
                 }
 
+                .object-container p{
+                    font-size:1.3vw;
+                }
+
                 .object-container img{
                     max-width: 9vw;
                     display: block; /* Ensure the image behaves as a block-level element */
@@ -112,11 +116,12 @@ body {
 
                 .info-container {
                     width: 100%;
-                    max-width: 500px;
                     margin-top: 20px;
                     padding: 10px;
                     border: 1px solid #ccc;
-                    background-color: #f9f9f9;
+                    background-color: #f0f0f0;
+                    display: none;
+                    transition: height 0.3s ease;
                 }
 
                 .info-container p {
@@ -138,15 +143,71 @@ body {
 .container h1 {
     margin-bottom:2vw;
 
+
+}
+
+.text p{
+    font-size:1.5vw;
+    margin-bottom:1vw;
+    margin-right: 4vw;
 }
 
 img {
   max-width: 40vw;
-  margin-right: 20px;
+  margin-right: 4vw;
 }
 
 .text {
   flex: 1;
 }
 
+.profile-container {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30vw;
+    margin-top:4vw;
+}
 
+.contact {
+  /* Add styles for each contact section */
+  display: flex;
+  align-items: center;
+  padding: 1.4vw;
+
+}
+
+.icon-image {
+  /* Add styles for the icon images */
+  width: 3vw;
+  height: auto;
+  margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name,
+.email {
+ /* Add styles for the contact name */
+    font-size: 1.8vw; /* Set the font-size to match the image width */
+    color: #333;
+    text-decoration: none;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.email {
+  /* Additional styles for the email address */
+  font-family: monospace;
+}

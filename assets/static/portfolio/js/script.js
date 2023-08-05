@@ -11,11 +11,56 @@ window.addEventListener('scroll', () => {
 //container change by click code
 const infoContainer = document.getElementById("info");
 
+const frameContainer = document.getElementById("frame");
+
         function showInfo(objectId) {
             const objectInfo = getObjectInfo(objectId);
+            let imgSrc = null;
             if (objectInfo) {
-                infoContainer.innerHTML = `<p>Information about ${objectId} goes here.</p>`;
+
+            const allImages = document.querySelectorAll('.object-container img');
+                allImages.forEach(image => {
+                        if(image.id == 'career'){
+                            image.src = `../../assets/static/portfolio/images/aboutIcons/carreira-notSelected.png`;
+                        } else if(image.id == 'cumputing'){
+                            image.src = `../../assets/static/portfolio/images/aboutIcons/uni-notSelected.png`;
+                        } else if(image.id == 'editor'){
+                            image.src = `../../assets/static/portfolio/images/aboutIcons/editor-notSelected.png`;
+                        } else if(image.id == 'skills'){
+                            image.src = `../../assets/static/portfolio/images/aboutIcons/skills-notSelected.png`;
+                        }
+
+
+                });
+
+                if(objectId == 'object1'){
+                    const objectImageElement = document.getElementById('career');
+                    imgSrc = `../../assets/static/portfolio/images/aboutIcons/carreira.png`;
+                    objectImageElement.src = imgSrc;
+                    frame.src = `../../assets/templates/aboutPages/career.html`;
+                } else if(objectId == 'object2'){
+                    const objectImageElement = document.getElementById('cumputing');
+                    imgSrc = `../../assets/static/portfolio/images/aboutIcons/uni.png`;
+                    objectImageElement.src = imgSrc;
+                } else if(objectId == 'object3'){
+                    const objectImageElement = document.getElementById('editor');
+                    imgSrc = `../../assets/static/portfolio/images/aboutIcons/editor.png`;
+                    objectImageElement.src = imgSrc;
+                } else if(objectId == 'object4'){
+                    const objectImageElement = document.getElementById('skills');
+                    imgSrc = `../../assets/static/portfolio/images/aboutIcons/skills.png`;
+                    objectImageElement.src = imgSrc;
+                }
+
+                var iframe = document.getElementById('info');
+                iframe.style.display = 'block';
+                iframe.scrollIntoView({ behavior: 'smooth' });
+
+
+
             }
+
+
         }
 
         function getObjectInfo(objectId) {
@@ -24,6 +69,8 @@ const infoContainer = document.getElementById("info");
             const objectInfoMap = {
                 "object1": "This is information about Object 1.",
                 "object2": "This is information about Object 2.",
+                "object3": "This is information about Object 3.",
+                "object4": "This is information about Object 4."
                 // Add more object information as needed
             };
 
