@@ -42,6 +42,7 @@ const frameContainer = document.getElementById("frame");
                     const objectImageElement = document.getElementById('cumputing');
                     imgSrc = `../../assets/static/portfolio/images/aboutIcons/uni.png`;
                     objectImageElement.src = imgSrc;
+                    frame.src = `../../assets/templates/aboutPages/uni.html`;
                 } else if(objectId == 'object3'){
                     const objectImageElement = document.getElementById('editor');
                     imgSrc = `../../assets/static/portfolio/images/aboutIcons/editor.png`;
